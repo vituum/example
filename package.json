@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "vituum": "^0.0.5"
+  }
+}
