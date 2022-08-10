@@ -6,6 +6,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vituum": "^0.0.9"
+    "vituum": "^0.0.10"
   }
 }

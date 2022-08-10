@@ -4,3 +4,4 @@ node_modules
 public/**/*.html
 public/manifest.json
 public/assets
+package-lock.json
