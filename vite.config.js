@@ -1,7 +1,7 @@
 import { defineConfig } from 'vituum'
 import { resolve } from 'path'
 import fs from 'fs'
-import minifier from "html-minifier";
+import minifier from "html-minifier-terser";
 
 const stripIndent = (string) => {
     const indent = () => {
@@ -105,14 +105,16 @@ export default defineConfig({
                             delete token.match;
                             return token;
                         },
-                        parse: function (token, context, chain) {
+                        parse: async function (token, context, chain) {
                             let name = Reflect.apply(Twig.expression.parse, this, [token.stack, context]);
                             let output = this.parse(token.output, context);
 
-                            const minify = minifier.minify(output, {
+                            const minify = await minifier.minify(output, {
                                 collapseWhitespace: true,
                                 collapseInlineTagWhitespace: false,
                                 minifyCSS: true,
+                                removeAttributeQuotes: true,
+                                quoteCharacter: `'`,
                                 minifyJS: true
                             })
 

@@ -9,6 +9,6 @@
   "dependencies": {
     "vituum": "^0.0.13",
     "twig": "^1.15.4",
-    "html-minifier": "^4.0.0"
+    "html-minifier-terser": "^7.0.0-beta.0"
   }
 }
