@@ -1,0 +1,39 @@
+<div class="s-hero-text bg-dark text-light">
+    <div class="wrp_s_body container t:flex">
+        <div class="col col-left">
+            <div class="elm_s_body">
+                {% include '@src/templates/Components/Breadcrumb.twig' %}
+                <h1 class="ui-heading" data-size="xl">{{ section.heading|default('Rádi vám s nákupem pomůžeme') }}</h1>
+                <div class="ui-text">
+                    <p>{{ section.text|default('Pokud máte k zakoupenému zboží dotaz, nebo potřebujete s čímkoliv poradit, neváhejte se na nás s důvěrou obrátit.') }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-right">
+            {% if section.image %}
+                <div class="elm_s_image">
+                    <picture class="ui-image rounded aspect-[46/58]">
+                        <img src="{{ placeholder(460, 580) }}" loading="lazy" alt="">
+                    </picture>
+                </div>
+            {% elseif section.contact %}
+                <div class="elm_s_contact grid gap-12">
+                    <div class="col">
+                        <strong class="ui-title flex items-center gap-1.5" data-size="md">
+                            <svg class="ui-icon" data-size="xs"><use href="#icon-mail"></use></svg>
+                            Email
+                        </strong>
+                        <a class="ui-heading text-primary" data-size="md" href="mailto:info@gw-int.net">info@gw-int.net</a>
+                    </div>
+                    <div class="col">
+                        <strong class="ui-title flex items-center gap-1.5" data-size="md">
+                            <svg class="ui-icon" data-size="xs"><use href="#icon-phone"></use></svg>
+                            Telefon
+                        </strong>
+                        <a class="ui-heading text-primary" data-size="md" href="tel:+420572540068">+420 572 540 068</a>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

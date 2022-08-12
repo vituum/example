@@ -1,0 +1,26 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Textové stránky",
+    "body": [
+      {
+        "src": "Sections/Text/Columns.twig"
+      },
+      {
+        "src": "Sections/Text/ImageNumbers.twig"
+      },
+      {
+        "src": "Sections/Text/InfoList.twig"
+      },
+      {
+        "src": "Sections/Text/Table.twig"
+      },
+      {
+        "src": "Sections/Text/ImageSmall.twig"
+      },
+      {
+        "src": "Sections/Downloads.twig"
+      }
+    ]
+  }
+}

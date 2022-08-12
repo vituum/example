@@ -1,0 +1,59 @@
+<header id="l-header" class="{% if headerNormal %}is-l-header-normal{% endif %}" data-controller="l-header">
+    <div class="wrp_header_body flex gap-4 t:gap-6 w:gap-12">
+        <div class="col d:hidden">
+            <button class="elm_header_menu" data-action="click->lib-drawer#show" aria-label="Menu">
+                <svg class="icon"><use href="#icon-menu"></use></svg>
+            </button>
+        </div>
+        <div class="col touch:mr-auto">
+            <a href="/" class="elm_header_logo" title="{{ name }}">
+                <svg class="w-[5.75em] h-[3.125em]"  fill="currentColor">
+                    <use href="#icon-logo"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="col touch:hidden mr-auto">
+            <nav class="elm_header_nav flex gap-6 w:gap-8 shd:gap-12">
+                {% for page in layout.nav %}
+                    <div class="col">
+                        <a href="{{ page.url }}" title="{{ page.name }}" class="ui-link after:content-none">{{ page.name }}</a>
+                    </div>
+                {% endfor %}
+            </nav>
+        </div>
+        <div class="col m:hidden flex-row items-center gap-2.5 w:gap-5">
+            <a class="ui-btn" href="/how-to" title="Chci nakupovat">Chci nakupovat</a>
+            <a class="ui-btn" href="/partner" title="Stát se partnerem">Stát se partnerem</a>
+        </div>
+        <div class="col flex-row items-center gap-2.5">
+            <button class="ui-icon-text gap-1" data-controller="lib-tippy" data-lib-tippy="dropdown, tippy-lang">
+                <span class="ui-title" data-size="sm">CZ</span>
+                <svg class="ui-icon" data-size="sm">
+                    <use href="#icon-angle-down"></use>
+                </svg>
+            </button>
+            <button class="ui-btn-circle" data-size="sm">
+                <svg><use href="#icon-mask"></use></svg>
+                <svg><use href="#icon-user"></use></svg>
+            </button>
+            <template id="tippy-lang">
+                <div class="ui-dropdown">
+                    <ul class="wrp_ui_list flex-col row-y gy-4">
+                        <li class="col">
+                            <button class="ui-link flex gap-2 items-center after:content-none" data-size="sm">
+                                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@4.1.5/flags/1x1/cz.svg" class="w-5 h-5 rounded-full border border-default border-opacity-10 lazyloaded" alt="cz">
+                                <span>Česky</span>
+                            </button>
+                        </li>
+                        <li class="col">
+                            <button class="ui-link flex gap-2 items-center after:content-none">
+                                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@4.1.5/flags/1x1/gb.svg" class="w-5 h-5 rounded-full border border-default border-opacity-10 lazyloaded" alt="cz">
+                                <span>Anglicky</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </template>
+        </div>
+    </div>
+</header>

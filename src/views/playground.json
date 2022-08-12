@@ -1,0 +1,11 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Green Ways",
+    "body": [
+      {
+        "src": "Utils/playground.twig"
+      }
+    ]
+  }
+}

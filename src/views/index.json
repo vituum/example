@@ -1,3 +1,32 @@
 {
-  "title": "Hello world 11"
+  "page": {
+    "title": "Homepage",
+    "body": [
+      {
+        "src": "Sections/Hero/Default.twig",
+        "heading": "Jsme mostem mezi přírodou a civilizací"
+      },
+      {
+        "src": "Sections/Product/Slider.twig"
+      },
+      {
+        "src": "Sections/About.twig"
+      },
+      {
+        "src": "Sections/Article/Latest.twig"
+      },
+      {
+        "src": "Sections/Tv/Slider.twig"
+      },
+      {
+        "src": "Sections/ScrollText.twig"
+      },
+      {
+        "src": "Sections/Newsletter.twig"
+      },
+      {
+        "src": "Sections/More/Pages.twig"
+      }
+    ]
+  }
 }

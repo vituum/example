@@ -1,0 +1,43 @@
+<section class="s-process bg-secondary">
+    <div class="container">
+        <div class="wrp_s_body t:flex" data-controller="lib-ns">
+            <div class="col col-left flex-shrink-0">
+                <div class="elm_s_heading grid gap-6">
+                    <h2 class="ui-heading" data-size="md">Proces výroby</h2>
+                    <div class="ui-text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Fusce wisi.</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <button class="ui-icon" aria-label="Předchozí" data-lib-ns-prev>
+                            <svg><use href="#icon-arrow-left"></use></svg>
+                        </button>
+                        <button class="ui-icon" aria-label="Následující" data-lib-ns-next>
+                            <svg><use href="#icon-arrow-right"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grow col-right">
+                <div class="elm_s_team flex gap-5 t:gap-10" data-lib-ns>
+                    {% for item in 1..5 %}
+                        <div class="col col-7 t:col-5 d:col-4 hd:w-[16.25rem]">
+                            <div class="c-process-item">
+                                <div class="wrp_item_image mb-8">
+                                    <picture class="ui-image rounded aspect-[52/61]">
+                                        <img src="{{ placeholder(260, 305) }}" loading="lazy" alt="">
+                                    </picture>
+                                </div>
+                                <div class="wrp_item_body grid gap-4">
+                                    <h3 class="ui-heading" data-size="md">Krok {{ loop.index }}</h3>
+                                    <div class="ui-text">
+                                        Phasellus eget euismod sem, vel pharetra lectus. Mauris viverra congue orci quis vestibulum. Nunc vulputate cursus mauris vitae fermentum.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

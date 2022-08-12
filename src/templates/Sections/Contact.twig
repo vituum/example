@@ -1,0 +1,87 @@
+<section class="s-contact is-s-padding">
+    <div class="container">
+        <div class="wrp_s_body t:flex">
+            <div class="col col-left m:mb-8">
+                <h2 class="ui-heading text-primary" data-size="md">Kontakt</h2>
+            </div>
+            <div class="col col-right flex-grow m:flex-col t:flex-row justify-between">
+                <div class="elm_s_contact gap-2">
+                    {% set address = "Klukova 1497, Staré Město, 686 03" %}
+                    <h3 class="ui-heading mb-2">Kontaktní adresa</h3>
+                    <div class="ui-text">
+                        {{ address }}
+                    </div>
+                    <a class="ui-icon-text text-primary m:mt-2" href="https://maps.google.com/maps?q={{ address }}" target="_blank" rel="noopener">
+                        <span class="ui-title" data-size="md">Ukázat na mapě</span>
+                        <svg class="ui-icon"><use href="#icon-arrow-right"></use></svg>
+                    </a>
+                    <div class="ui-text mt-8">
+                        <p>+420 572 560 342</p>
+                    </div>
+                </div>
+                <div class="elm_s_contact gap-2">
+                    {% set address = "Ovocný trh 572/11, Praha 1, 110 00" %}
+                    <h3 class="ui-heading mb-2">Sídlo společnosti</h3>
+                    <div class="ui-text">
+                        {{ address }}
+                    </div>
+                    <a class="ui-icon-text text-primary m:mt-2" href="https://maps.google.com/maps?q={{ address }}" target="_blank" rel="noopener">
+                        <span class="ui-title" data-size="md">Ukázat na mapě</span>
+                        <svg class="ui-icon"><use href="#icon-arrow-right"></use></svg>
+                    </a>
+                    <div class="ui-text mt-8">
+                        <p>IČO: 25575767,</p>
+                        <p></p>
+                        <p>DIČ: CZ 25575767Z</p>
+                        <p></p>
+                        <p>Zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, spisová značka C-164641.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrp_s_team t:flex" data-controller="lib-ns">
+            <div class="col col-left flex-shrink-0">
+                <div class="elm_s_heading grid gap-6">
+                    <h2 class="ui-heading text-primary" data-size="md">Tým Green Ways</h2>
+                    <div class="ui-text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Fusce wisi.</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <button class="ui-icon" aria-label="Předchozí" data-lib-ns-prev>
+                            <svg><use href="#icon-arrow-left"></use></svg>
+                        </button>
+                        <button class="ui-icon" aria-label="Následující" data-lib-ns-next>
+                            <svg><use href="#icon-arrow-right"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-grow col-right">
+                <div class="elm_s_team flex gap-5 t:gap-10" data-lib-ns>
+                    {% for item in 1..5 %}
+                        <div class="col col-7 t:col-4 hd:w-[16.25rem]">
+                            <div class="c-team-item">
+                                <div class="wrp_item_image mb-8">
+                                    <picture class="ui-image rounded aspect-[52/61]">
+                                        <img src="{{ placeholder(260, 305) }}" loading="lazy" alt="">
+                                    </picture>
+                                </div>
+                                <div class="wrp_item_body">
+                                    <h3 class="ui-heading" data-size="sm">Waiapi Karaka</h3>
+                                    <div class="ui-text">
+                                        Founder of GreenWays
+                                    </div>
+                                    <a class="ui-icon-text mt-5" href="https://maps.google.com/maps?q={{ address }}" target="_blank" rel="noopener">
+                                        <svg class="ui-icon"><use href="#icon-social-linkedin"></use></svg>
+                                        <span class="ui-title" data-size="md">Poslat email</span>
+                                        <svg class="ui-icon"><use href="#icon-arrow-right"></use></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

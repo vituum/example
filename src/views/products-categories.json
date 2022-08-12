@@ -1,0 +1,11 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Kategorie produktů",
+    "body": [
+      {
+        "src": "Sections/Product/Category.twig"
+      }
+    ]
+  }
+}

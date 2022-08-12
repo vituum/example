@@ -1,0 +1,20 @@
+<div class="s-product-grid is-s-padding bg-secondary">
+    <div class="container grid gap-12 t:gap-16">
+        <div class="wrp_c_body row g-10 flex-wrap">
+            {% for item in 1..6 %}
+                <div class="col col-12 t:col-6 d:col-4">
+                    {% include '@src/templates/Components/Product/Item.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="wrp_c_foot text-center">
+            <button class="ui-btn-text">
+                <span>Načíst dalších 6</span>
+                <span class="ui-btn-circle" data-action="click->lib#ripple">
+                    <svg><use href="#icon-mask"></use></svg>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<section class="s-product-slider bg-dark text-light" data-controller="lib-ns">
+    <h2 class="ui-heading sr-only">Produkty</h2>
+    <div class="container">
+        <div class="wrp_s_body flex items-center gap-8">
+            <div class="elm_s_nav m:hidden">
+                <button class="ui-icon" aria-label="Předchozí" data-lib-ns-prev>
+                    <svg><use href="#icon-arrow-left"></use></svg>
+                </button>
+            </div>
+            <div class="elm_s_slider row-x gx-8" data-lib-ns>
+                {% for product in 1..7 %}
+                    <div class="col col-12 t:col-6 d:col-4">
+                        <a class="c-product-slider-item" href="">
+                            <div class="wrp_item_image">
+                                <picture class="ui-image bg-transparent aspect-[6/7]">
+                                    <img src="{{ '/src/assets/product-example.png'|asset }}" loading="lazy" alt="">
+                                </picture>
+                            </div>
+                            <div class="wrp_item_body">
+                                <strong class="ui-title uppercase" data-size="sm">Zelené potraviny</strong>
+                                <h3 class="ui-heading">BIO Chlorella Green Ways v prášku (330 g)</h3>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="elm_s_nav m:hidden">
+                <button class="ui-icon" aria-label="Následující" data-lib-ns-next>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </button>
+            </div>
+        </div>
+        <div class="wrp_s_foot">
+            <div class="c-slider-dots" data-lib-ns-nav>
+            </div>
+        </div>
+    </div>
+</section>

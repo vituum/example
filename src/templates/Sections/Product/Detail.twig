@@ -1,0 +1,159 @@
+<div class="s-product-detail">
+    <div class="container">
+        <div class="wrp_s_head flex touch:flex-col">
+            <div class="col touch:contents d:col-6 col-left">
+                {% include '@src/templates/Components/Breadcrumb.twig' %}
+                <h1 class="ui-heading touch:order-0" data-size="xl">BIO Ječmen Green Ways (330&nbsp;g)</h1>
+                <div class="c-highlight touch:order-1">
+                    <div class="wrp_c_body flex justify-between">
+                        <div class="col col-left">
+                            <strong class="ui-heading" data-size="sm">Staňte se členy a nakupujte produkty výhodně.</strong>
+                        </div>
+                        <div class="col col-right">
+                            <a href="#" class="ui-btn-text">
+                                <span>Chci nakupovat</span>
+                                <span class="ui-btn-circle">
+                                    <svg><use href="#icon-mask"></use></svg>
+                                    <svg><use href="#icon-arrow-right"></use></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-highlight touch:order-1 d:!-mt-8">
+                    <div class="wrp_c_body flex justify-between">
+                        <div class="col col-left">
+                            <strong class="ui-heading" data-size="sm">Staňte se partnery Green Ways a získejte lepší ceny</strong>
+                        </div>
+                        <div class="col col-right">
+                            <a href="#" class="ui-btn-text">
+                                <span>Stát se partnerem</span>
+                                <span class="ui-btn-circle">
+                                    <svg><use href="#icon-mask"></use></svg>
+                                    <svg><use href="#icon-arrow-right"></use></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col touch:contents d:col-6 col-right">
+                <div class="c-slider-single touch:order-0" data-controller="lib-ns">
+                    <div class="wrp_c_body flex items-center gap-4">
+                        <div class="elm_c_nav m:hidden">
+                            <button class="ui-icon" aria-label="Předchozí" data-lib-ns-prev>
+                                <svg><use href="#icon-arrow-left"></use></svg>
+                            </button>
+                        </div>
+                        <div class="elm_c_slider flex-grow row-x" data-lib-ns>
+                            {% for product in 1..4 %}
+                                <div class="col col-12">
+                                    <picture class="ui-image bg-transparent aspect-[6/7]">
+                                        <img src="{{ '/src/assets/product-example.png'|asset }}" loading="lazy" alt="">
+                                    </picture>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="elm_c_nav m:hidden">
+                            <button class="ui-icon" aria-label="Následující" data-lib-ns-next>
+                                <svg><use href="#icon-arrow-right"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="wrp_c_foot flex justify-center">
+                        <div class="c-slider-dots" data-lib-ns-nav></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrp_s_body">
+            <div class="elm_s_body">
+                <div class="col col-left">
+                    <h2 class="ui-heading text-primary" data-size="md">Popis produktu</h2>
+                </div>
+                <div class="col col-right">
+                    <h3 class="ui-heading">Ječmen Green Ways je enzymatický elixír plný života.</h3>
+                    <div class="ui-text">
+                        <p>Představte si mladou rostlinku ječmenné trávy, jak klíčí, proráží tvrdou krustu zeminy a roste vzhůru ke slunci. Tento cílevědomý, mladistvý organismus je sklízen v období svého rozpuku. Je zpracován v okamžiku, kdy nasál nesmírné množství živin a energie ze země, vody, vzduchu a slunce. Tyto základní elementy <b>se přirozeně přetváří na komplexnější látky</b>, jež poté využívá vyšší potravní řetězec, a tudíž i my. Ječmen GW pěstujeme, sklízíme i zpracováváme v souladu s <a href="#">principy ekologického zemědělství</a>. Na váš stůl přichází opatřený BIO certifikací, která šetrné zpracování dokládá.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="elm_s_body is-spoon">
+                <div class="col col-left">
+                    <h2 class="ui-heading text-primary" data-size="md">Užitek</h2>
+                    <picture class="ui-image"></picture>
+                </div>
+                <div class="col col-right">
+                    <div class="ui-text">
+                        <p>Ječmen Green Ways je enzymatický elixír plný života. Představte si mladou rostlinku ječmenné trávy, jak klíčí, proráží tvrdou krustu zeminy a roste vzhůru ke slunci. Tento cílevědomý mladistvý organismus je sklízen v období svého rozpuku. Je zpracován v okamžiku, kdy nasál nesmírné množství živin a energie ze země, vody, vzduchu i slunce. Tyto základní elementy se přirozeně přetvářejí na komplexnější látky, jež poté využívá vyšší potravní řetězec, tudíž i my.</p>
+                        <p></p>
+                        <p>Hans Günter Berner v knize Hladovění nad plným hrncem popisuje situaci, v níž člověk, který dosyta jí, umírá na nutriční podvýživu, protože se sytí „hladovými“ plodinami vzešlými z vyčerpané půdy. Jak vidíte, přebytek nekvalitní stravy nepřináší našemu tělu užitek, ale škodu. Proto u zelených potravin Green Ways dbáme dvou zásad. Pro pěstování vybíráme nutričně bohaté lokality a pro zpracování produktu šetrné technologie, které zajišťují zachování všech živin.</p>
+                    </div>
+                    <div class="flex m:flex-col gap-10">
+                        <div class="col">
+                            <div class="c-box-item">
+                                <div class="wrp_item_image">
+                                    <picture class="ui-image rounded t:aspect-square m:aspect-[5/3]">
+                                        <img src="{{ placeholder(320, 320) }}" alt="" loading="lazy">
+                                    </picture>
+                                    <a href="#" class="ui-btn-text text-light">
+                                        <span>Prozkoumat</span>
+                                        <span class="ui-btn-circle">
+                                            <svg><use href="#icon-mask"></use></svg>
+                                            <svg><use href="#icon-arrow-right"></use></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="wrp_item_body">
+                                    <strong class="ui-title uppercase text-primary" data-size="sm">Novinky</strong>
+                                    <h3 class="ui-heading">Chci se dozvědět více o Green Ways</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="c-box-item">
+                                <div class="wrp_item_image">
+                                    <picture class="ui-image rounded aspect-[5/3]">
+                                        <img src="{{ placeholder(500, 300) }}" alt="" loading="lazy">
+                                    </picture>
+                                    <a href="#" class="ui-btn-text text-light">
+                                        <span>Pustit video</span>
+                                        <span class="ui-btn-circle">
+                                            <svg><use href="#icon-mask"></use></svg>
+                                            <svg class="icon-play"><use href="#icon-play"></use></svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="wrp_item_body">
+                                    <strong class="ui-title uppercase text-primary" data-size="sm">GWTV</strong>
+                                    <h3 class="ui-heading">Chorella obsahuje širokou škálu biologicky aktivních látek</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elm_s_body">
+                <div class="col col-left">
+                    <h2 class="ui-heading text-primary" data-size="md">Použití</h2>
+                    <picture class="ui-image"></picture>
+                </div>
+                <div class="col col-right">
+                    <h3 class="ui-heading">Doporučenou denní dávkou Ječmene Green Ways je pro dospělého člověka jedna polévková lžíce.</h3>
+                    <div class="ui-text grid t:grid-cols-2 t:gap-10 gap-5">
+                        <p>Při zátěži je možné množství ječmene zvýšit. Předávkování nápojem (podobně jako u konzumace zeleninových džusů) v podstatě nehrozí. Produkt uchovávejte v chladu a temnu a při přípravě použijte studenou či vlažnou neperlivou vodu.</p>
+                        <p>Nápoj pijte dle možností, nejlépe nalačno. Hustotu si regulujte podle chuti a potřeby. Ječmen Green Ways je produkt ryze přírodní, tudíž jeho chuť nebo vůně nemusejí být vždy zcela stejné. Závisejí totiž na pěstebních podmínkách (roční doba, teplota, vlhkost, svit slunce, složení půdy a další).</p>
+                    </div>
+                    <div class="flex gap-10">
+                        <div class="col">
+                            <div class="c-box-item"></div>
+                        </div>
+                        <div class="col">
+                            <div class="c-box-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

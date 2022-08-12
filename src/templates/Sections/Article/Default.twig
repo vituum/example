@@ -1,0 +1,53 @@
+<section class="s-article">
+    <div class="container">
+        <div class="wrp_s_head grid gap-14">
+            {% include '@src/templates/Components/Breadcrumb.twig' %}
+            <h1 class="ui-heading text-center" data-size="xl">Aktuality ze světa zdraví a životního stylu</h1>
+        </div>
+        <div class="wrp_s_body">
+            <nav class="elm_s_nav t:col-4">
+                {% for item in ['Vše', 'Trendy', 'Novinky', 'Kategorie'] %}
+                    <div class="col">
+                        <a class="ui-heading" href="#">{{ item }}</a>
+                        {% if loop.index == 2 %}
+                            <ul>
+                                <li>
+                                    <a class="ui-heading font-normal" data-size="sm" href="#">Vitaminy</a>
+                                </li>
+                                <li>
+                                    <a class="ui-heading font-normal" data-size="sm" href="#">Pro maminky</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </nav>
+            <div class="elm_s_body">
+                {% for item in 1..5 %}
+                    <div class="elm_s_item flex items-start gap-10">
+                        {% if loop.index != 2 %}
+                            <div class="wrp_item_image flex-shrink-0 w-full t:max-w-[16.25rem]">
+                                <picture class="ui-image rounded aspect-[4/3] t:aspect-[65/82]">
+                                    <img src="{{ placeholder(390, 492) }}" loading="lazy" alt="">
+                                </picture>
+                            </div>
+                        {% endif %}
+                        <div class="wrp_item_body grid gap-5">
+                            <div class="elm_item_meta flex items-center gap-7">
+                                <div class="ui-title uppercase font-normal" data-size="md">Středa 14. Dubna 2021</div>
+                                <div class="ui-badge">Novinky</div>
+                            </div>
+                            <div class="elm_item_text">
+                                <h2 class="ui-heading">{% if loop.index == 2 %}Chlorella: Konzerva sluneční energie a vitamínu D{% else %}Příjemnější těhotenství, více energie a důležité živiny aneb Jak zelené potraviny pomáhají maminkám{% endif %}</h2>
+                                <a href="#" class="ui-icon-text text-primary mt-5">
+                                    <span class="ui-title">Prohlédnout</span>
+                                    <svg class="ui-icon"><use href="#icon-arrow-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

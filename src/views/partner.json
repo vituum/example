@@ -1,0 +1,30 @@
+{
+  "page": {
+    "title": "Chci se stát partnerem",
+    "body": [
+      {
+        "src": "Sections/Hero/Small.twig",
+        "link": true
+      },
+      {
+        "src": "Sections/Features.twig",
+        "features": 8
+      },
+      {
+        "src": "Sections/Text/ImageNumbersSmall.twig"
+      },
+      {
+        "src": "Sections/Text/Info.twig"
+      },
+      {
+        "src": "Sections/Form/SignUp.twig"
+      },
+      {
+        "src": "Sections/Newsletter.twig"
+      },
+      {
+        "src": "Sections/More/Pages.twig"
+      }
+    ]
+  }
+}

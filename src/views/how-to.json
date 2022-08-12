@@ -1,0 +1,29 @@
+{
+  "page": {
+    "title": "Chci nakupovat",
+    "body": [
+      {
+        "src": "Sections/Hero/Small.twig",
+        "image": true,
+        "link": true
+      },
+      {
+        "src": "Sections/Features.twig",
+        "features": 4
+      },
+      {
+        "src": "Sections/Text/Default.twig",
+        "heading": "heading"
+      },
+      {
+        "src": "Sections/Form/SignUp.twig"
+      },
+      {
+        "src": "Sections/Newsletter.twig"
+      },
+      {
+        "src": "Sections/More/Pages.twig"
+      }
+    ]
+  }
+}

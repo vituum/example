@@ -1,0 +1,38 @@
+ <div class="s-partnership bg-dark">
+     <div class="container text-white">
+         <div class="wrp_s_head">
+             <div class="elm_s_text">
+                 <h2 class="ui-heading pb-7" data-size="lg">Přihlásit k odborné spolupráci může každý</h2>
+                 <div class="ui-text pb-12">Dnes vlastníme informační a vzdělávací zázemí světového formátu. Pořádáme odborné konference, investujeme do zdravotních studií a komunikujeme s odborníky z celého světa. </div>
+                 <button class="ui-btn-text">
+                     <span> Začít spolupracovat</span>
+                     <span class="ui-btn-circle">
+                        <svg><use href="#icon-mask"></use></svg>
+                        <svg><use href="#icon-arrow-right"></use></svg>
+                    </span>
+                 </button>
+             </div>
+             <div class="elm_s_image">
+                 <div class="ui-image aspect-[55/45] rounded">
+                     <img src="{{ placeholder(550, 450) }}" alt="">
+                 </div>
+             </div>
+         </div>
+         <div class="wrp_s_body">
+             <div class="elm_s_heading text-center pb-16">
+                 <h3 class="ui-heading text-center" data-size="md">Výhody spolupráce</h3>
+             </div>
+             <div class="elm_s_grid">
+                 {% for item in 1..4 %}
+                     <div class="flex flex-col gap-11">
+                         <div class="ui-icon aspect-square">
+                             <img src="{{ placeholder(50,50) }}" alt="">
+                         </div>
+                         <p class="ui-text">Lorem nibh, aliquet a eros non, varius fermentum felis. Vestibulum sed faucibus quam, at consequat.</p>
+                     </div>
+                 {% endfor %}
+             </div>
+
+         </div>
+     </div>
+ </div>

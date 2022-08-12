@@ -1,0 +1,23 @@
+<div class="s-product-grid is-s-padding bg-secondary" data-controller="lib-ns">
+    <div class="container grid gap-12 t:gap-16">
+        <div class="wrp_s_head text-center">
+            <h2 class="ui-heading" data-size="lg">Podobné produkty</h2>
+        </div>
+        <div class="wrp_s_body row touch:space-x-5 d:gx-10 py-10 !-my-10" data-lib-ns>
+            {% for item in 1..3 %}
+                <div class="col col-9 t:col-5 d:col-4">
+                    {% include '@src/templates/Components/Product/Item.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="wrp_s_foot text-center">
+            <a class="ui-btn-text" href="#">
+                <span>Chci nakupovat</span>
+                <span class="ui-btn-circle" data-action="click->lib#ripple">
+                    <svg><use href="#icon-mask"></use></svg>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

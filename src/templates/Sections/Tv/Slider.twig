@@ -1,0 +1,24 @@
+<section class="s-tv-slider is-s-padding bg-dark text-light" data-controller="lib-ns">
+    <div class="container">
+        <div class="wrp_c_head flex items-center justify-between">
+            <div class="col">
+                <h2 class="ui-heading" data-size="lg">GWTV</h2>
+            </div>
+            <div class="col flex-row gap-4">
+                <button class="ui-icon" aria-label="Předchozí" data-lib-ns-prev>
+                    <svg><use href="#icon-arrow-left"></use></svg>
+                </button>
+                <button class="ui-icon" aria-label="Následující" data-lib-ns-next>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </button>
+            </div>
+        </div>
+        <div class="wrp_c_body flex gap-10" data-lib-ns>
+            {% for item in 1..4 %}
+                <div class="col col-12 t:col-7 d:col-5">
+                    {% include '@src/templates/Components/Tv/Item.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

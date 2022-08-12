@@ -1,0 +1,34 @@
+<section class="s-newsletter is-s-padding" id="s-newsletter">
+    <div class="container">
+        <div class="wrp_c_body flex gap-10 items-center justify-between m:flex-wrap">
+            <div class="elm_s_image">
+                <picture class="ui-image rounded aspect-[46/58]">
+                    <img src="{{ placeholder(460, 580) }}" loading="lazy" alt="">
+                </picture>
+                <img class="is-circle" src="{{ '/src/assets/circle-newsletter.png'|asset }}" loading="lazy" alt="" data-controller="lib-gsap-parallax" data-speed="-0.25">
+                <img class="is-grass" src="{{ '/src/assets/grass.png'|asset }}" loading="lazy" alt="" data-controller="lib-gsap-parallax" data-speed="0.5">
+            </div>
+            <div class="elm_s_body">
+                <h2 class="ui-heading" data-size="lg">Přihlaste se k našemu newsletteru</h2>
+                <div class="ui-text">
+                    Přihlaste se k našemu newsletteru a buďte první, kdo se dozví o novinkách a slevách.
+                </div>
+                <form class="c-form-newsletter">
+                    <div class="wrp_form_body grid gap-6">
+                        <div class="ui-input">
+                            <input type="email" placeholder="Zde zadejte svůj email">
+                            <button class="ui-btn-circle" data-size="sm">
+                                <svg><use href="#icon-mask"></use></svg>
+                                <svg><use href="#icon-arrow-right"></use></svg>
+                            </button>
+                        </div>
+                        <label class="ui-checkbox is-secondary">
+                            <input type="checkbox">
+                            <span>Souhlasím se <a href="#">zpracováním svých osobních údajů</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

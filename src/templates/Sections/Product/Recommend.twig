@@ -1,0 +1,72 @@
+<section class="s-product-recommend bg-dark text-light" data-controller="lib-ns">
+    <div class="container flex flex-col gap-8 t:gap-16">
+        <div class="wrp_s_head text-center">
+            <h2 class="ui-heading" data-size="lg">K BIO Ječmen Green Ways doporučujeme</h2>
+        </div>
+        <div class="wrp_s_body flex">
+            <div class="elm_s_nav m:hidden">
+                <button class="ui-icon" data-size="md" aria-label="Předchozí" data-lib-ns-prev>
+                    <svg><use href="#icon-arrow-left"></use></svg>
+                </button>
+            </div>
+            <div class="elm_s_slider text-default row-x gx-10" data-lib-ns>
+                {% for product in 1..2 %}
+                    <div class="col col-12 d:col-4">
+                        <div class="c-product-recommend-item-image">
+                            <div class="wrp_item_image">
+                                <picture class="ui-image rounded">
+                                    <img src="{{ placeholder(300,400) }}" loading="lazy" alt="">
+                                </picture>
+                            </div>
+                            <div class="wrp_item_body text-light">
+                                <strong class="ui-title text-primary" data-size="sm">GWTV</strong>
+                                <h3 class="ui-heading">Jak připravit lahodný nápoj?</h3>
+                                <div class="ui-text">
+                                    <p>Chlorella Green Ways je sladkovodní řasa bohatá na živiny, antioxidanty a kvalitní vlákninu.</p>
+                                </div>
+                                <div class="ui-btn-text mt-4">
+                                    <div>Přehrát video</div>
+                                    <div class="ui-btn-circle">
+                                        <svg><use href="#icon-mask"></use></svg>
+                                        <svg class="icon-play"><use href="#icon-play"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 d:col-8">
+                        <a class="c-product-recommend-item">
+                            <div class="wrp_item_body">
+                                <strong class="ui-title text-primary" data-size="sm">Akce</strong>
+                                <h3 class="ui-heading">Shaker GW</h3>
+                                <div class="ui-text">
+                                    <p>Mrkev Green Ways můžete snadno využít například při přípravě koktejlů a smoothie. Skvěle se hodí zejména pro studenou kuchyni, kde si zachová biologicky aktivní látky.</p>
+                                </div>
+                                <div class="ui-btn-text">
+                                    <div>Prohlédnout</div>
+                                    <div class="ui-btn-circle">
+                                        <svg><use href="#icon-mask"></use></svg>
+                                        <svg><use href="#icon-arrow-right"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrp_item_image">
+                                <picture class="ui-image aspect-square">
+                                    <img src="{{ placeholder(400,400, null, 'f4f4f4') }}" loading="lazy" alt="">
+                                </picture>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="elm_s_nav m:hidden">
+                <button class="ui-icon" data-size="md" aria-label="Následující" data-lib-ns-next>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </button>
+            </div>
+        </div>
+        <div class="wrp_s_foot m:flex t:hidden justify-center">
+            <div class="c-slider-dots" data-lib-ns-nav></div>
+        </div>
+    </div>
+</section>

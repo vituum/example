@@ -1,0 +1,11 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Magazín",
+    "body": [
+      {
+        "src": "Sections/Tv/Default.twig"
+      }
+    ]
+  }
+}

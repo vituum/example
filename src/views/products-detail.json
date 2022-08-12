@@ -1,0 +1,20 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Detail produktu",
+    "body": [
+      {
+        "src": "Sections/Product/Detail.twig"
+      },
+      {
+        "src": "Sections/Product/Recommend.twig"
+      },
+      {
+        "src": "Sections/Product/GridSlider.twig"
+      },
+      {
+        "src": "Sections/More/Pages.twig"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<div class="s-hero-photos is-s-padding">
+    <div class="container">
+        <div class="wrp_s_head">
+            {% include '@src/templates/Components/Breadcrumb.twig' %}
+        </div>
+        <div class="wrp_s_body">
+            <svg class="text-primary"><use href="#icon-ring"></use></svg>
+            <h1 class="ui-heading text-center" data-size="xl">Přinášíme zelené potraviny do moderních domácností</h1>
+            <picture class="ui-image rounded aspect-[4/3] is-image-1" data-controller="lib-gsap-parallax" data-speed="0.2" data-start="0">
+                <img src="{{ placeholder(400,300) }}" loading="lazy" alt="">
+            </picture>
+            <picture class="ui-image rounded aspect-[4/3] is-image-2" data-controller="lib-gsap-parallax"  data-speed="-0.2" data-start="0">
+                <img src="{{ placeholder(400,300) }}" loading="lazy" alt="">
+            </picture>
+            <picture class="ui-image rounded aspect-[5/7] is-image-3" data-controller="lib-gsap-parallax"  data-speed="-0.2" data-start="0">
+                <img src="{{ placeholder(400,560) }}" loading="lazy" alt="">
+            </picture>
+            <picture class="ui-image rounded aspect-[5/7] is-image-4" data-controller="lib-gsap-parallax"  data-speed="-0.4" data-start="0">
+                <img src="{{ placeholder(400,560) }}" loading="lazy" alt="">
+            </picture>
+        </div>
+        <div class="wrp_s_foot">
+            <button class="ui-icon">
+                <svg><use href="#icon-arrow-down"></use></svg>
+            </button>
+        </div>
+    </div>
+</div>

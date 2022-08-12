@@ -1,0 +1,22 @@
+{
+  "page": {
+    "title": "Kontakt",
+    "body": [
+      {
+        "src": "Sections/Hero/Text.twig",
+        "heading": "Jsme mostem mezi přírodou a civilizací",
+        "text": "Přinášíme zeleň do moderních domácností, tj. lidem spjatým s rychlým životním stylem. ",
+        "image": true
+      },
+      {
+        "src": "Sections/Text/ImageColumns.twig"
+      },
+      {
+        "src": "Sections/Process.twig"
+      },
+      {
+        "src": "Sections/Certificates/Default.twig"
+      }
+    ]
+  }
+}

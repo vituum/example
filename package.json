@@ -2,10 +2,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
+    "cleanup": "vituum cleanup",
     "build": "vituum build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vituum": "^0.0.10"
+    "vituum": "^0.0.13",
+    "twig": "^1.15.4",
+    "html-minifier": "^4.0.0"
   }
 }

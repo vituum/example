@@ -1,0 +1,19 @@
+<div class="s-features">
+    <div class="container flex flex-col">
+        <div class="wrp_s_head">
+           <h2 class="ui-heading text-center" data-size="lg">Jaké jsou výhody <br> nakupování</h2>
+        </div>
+        <div class="wrp_s_body">
+            {% for card in 1..section.features %}
+            <div class="flex flex-col gap-y-8">
+                <div class="ui-image aspect-square mx-auto">
+                    <img src="{{ placeholder(64,64) }}" loading="lazy" alt="">
+                </div>
+                <div class="ui-text text-center">
+                    Vivamus fermentum turpis nec ullamcorper lobortis. Integer ornare, lacus sit amet tempus venenatis, lectus orci mattis nunc, at rhoncus lorem lectus eget velit.
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

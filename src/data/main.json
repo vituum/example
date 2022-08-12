@@ -1,5 +1,5 @@
 {
-  "title": "Hi there",
+  "name": "Green Ways",
   "prefetch": [
     "https://cdn.jsdelivr.net",
     "https://fonts.gstatic.com",
@@ -8,12 +8,53 @@
   "assets": {
     "css": {
       "all": [
-        "/src/styles/main.css"
-      ]
+        "/src/styles/main.css",
+        "/src/styles/font.gilroy.css"
+      ],
+      "tailwind": "/temp/tailwind.css",
+      "tailwind.src": "/src/styles/tailwind.css",
+      "ratio": "/temp/ratio.css"
     },
     "js": {
-      "main": "/src/scripts/main.js"
+      "importmap": "/public/importmap.json",
+      "main": "/src/scripts/main.js",
+      "lazysizes": "https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"
+    },
+    "icons": "/src/icons.svg",
+    "images": {
+      "circleGw": "/src/assets/circle-gw.png",
+      "circleNewsletter": "/src/assets/circle-newsletter.png",
+      "grass": "/src/assets/grass.png",
+      "placeholder": "/src/assets/placeholder.png",
+      "productExample": "/src/assets/product-example.png",
+      "spoon": "/src/assets/spoon.png"
     }
+  },
+  "layout": {
+    "template": "Layout/Main.twig",
+    "cookies": true,
+    "nav": [
+      {
+        "name": "Produkty",
+        "url": "/products"
+      },
+      {
+        "name": "Kdo je Green Ways",
+        "url": "/about"
+      },
+      {
+        "name": "Proces výroby",
+        "url": "/process"
+      },
+      {
+        "name": "Magazín",
+        "url": "/articles"
+      },
+      {
+        "name": "GWTV",
+        "url": "/tv"
+      }
+    ]
   },
   "media": {
     "min-1280": "(min-width: 1280px)",
@@ -21,5 +62,13 @@
     "min-768": "(min-width: 768px)",
     "max-400": "(max-width: 767px)",
     "min-320": "(min-width: 320px)"
+  },
+  "lazy": {
+    "1x1": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+    "16x9": "data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACwAAAAAEAAJAAACCoSPqcvtD6OclBUAOw==",
+    "5x2": "data:image/gif;base64,R0lGODlhBQACAIAAAP///wAAACwAAAAABQACAAACA4SPBQA7",
+    "4x3": "data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACwAAAAABAADAAACA4SPVgA7",
+    "8x5": "data:image/gif;base64,R0lGODlhCAAFAIAAAP///wAAACwAAAAACAAFAAACBYSPqctYADs=",
+    "3x2": "data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACwAAAAAAwACAAACAoRfADs="
   }
 }

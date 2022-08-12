@@ -1,0 +1,20 @@
+<section class="s-certificates is-s-padding {% if section.background %}bg-secondary{% endif %}">
+    <h2 class="ui-heading sr-only">Certifikáty</h2>
+    <div class="wrp_s_body container flex m:flex-col m:gap-12 justify-between">
+        {% for item in 1..2 %}
+            <div class="elm_s_item">
+                <div class="wrp_item_image">
+                    <picture class="ui-image bg-transparent aspect-[6/7]">
+                        <img src="{{ placeholder(252, 294) }}" loading="lazy" alt="">
+                    </picture>
+                </div>
+                <div class="wrp_item_body">
+                    <h3 class="ui-heading">Název certifikátu</h3>
+                    <div class="ui-text">
+                        Phasellus velit dui, ullamcorper id purus vel, ullamcorper semper felis. Maecenas non elit ut elit convallis consequat sed a purus.
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>

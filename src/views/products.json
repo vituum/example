@@ -1,0 +1,20 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Naše produkty",
+    "body": [
+      {
+        "src": "Sections/Hero/Photos.twig"
+      },
+      {
+        "src": "Sections/Product/Promo.twig"
+      },
+      {
+        "src": "Sections/Product/Grid.twig"
+      },
+      {
+        "src": "Sections/Article/Latest.twig"
+      }
+    ]
+  }
+}

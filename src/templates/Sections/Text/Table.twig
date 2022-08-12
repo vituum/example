@@ -1,0 +1,23 @@
+<div class="s-text-table bg-secondary">
+    <div class="container">
+        <div class="wrp_s_head">
+            <h2 class="ui-heading text-center" data-size="lg">Fusce scelerisque augue eu <br> odio blandit luctus.</h2>
+        </div>
+        <div class="wrp_s_body">
+            {% for item in 1..4 %}
+                <div class="elm_s_item">
+                    <h3 class="ui-heading d:col-4" data-size="md">Monica Anderson</h3>
+                    <div class="flex flex-col d:col-4">
+                        <h4 class="ui-heading pb-4">
+                            CEO, co-founder
+                        </h4>
+                        <div class="ui-text">Cras suscipit magna sit amet mauris congue ornare. Donec ut elit hendrerit, ullamcorper leo et, feugiat tortor. Sed lorem nibh, aliquet a eros non, varius fermentum felis. Vestibulum sed faucibus quam, at consequat nisi. </div>
+                    </div>
+                    <div class="ui-image d:ml-auto rounded aspect-[20/17] d:col-4 mt-4">
+                        <img src="{{ placeholder(200,170) }}" alt="Profile image">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

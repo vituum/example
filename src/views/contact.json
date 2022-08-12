@@ -1,0 +1,17 @@
+{
+  "page": {
+    "title": "Kontakt",
+    "body": [
+      {
+        "src": "Sections/Hero/Text.twig",
+        "contact": true
+      },
+      {
+        "src": "Sections/Contact.twig"
+      },
+      {
+        "src": "Sections/Form/Contact.twig"
+      }
+    ]
+  }
+}

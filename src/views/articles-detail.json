@@ -1,0 +1,11 @@
+{
+  "headerNormal": true,
+  "page": {
+    "title": "Detail článku",
+    "body": [
+      {
+        "src": "Sections/Article/Detail.twig"
+      }
+    ]
+  }
+}

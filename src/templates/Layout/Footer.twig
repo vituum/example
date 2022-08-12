@@ -1,0 +1,61 @@
+<footer id="l-footer">
+    <div class="container">
+        <div class="wrp_footer_body row-x touch:flex-wrap">
+            <div class="col gap-12">
+                <div class="elm_footer_logo">
+                    <svg class="w-[5.75em] h-[3.125em]" fill="currentColor">
+                        <use href="#icon-logo"></use>
+                    </svg>
+                </div>
+                <div class="elm_footer_info">
+                    GREEN WAYS s.r.o.<br>
+                    Klukova 1497,<br>
+                    Staré Město, 686 03
+                </div>
+            </div>
+            <div class="col flex-row gap-12 t:gap-32 d:gap-16 w:gap-[5.875rem] s:flex-wrap">
+                <div class="elm_footer_links">
+                    <strong class="ui-heading" data-size="sm">Vše o nákupu</strong>
+                    <ul class="grid gap-4">
+                        {% for link in ['Zpracování osobních údajů', 'Obchodní podmínky', 'Garance vrácení zboží', 'Reklamační řád', 'Způsoby dopravy a platby', 'Formuláře'] %}
+                            <li>
+                                <a class="ui-link" href="#">{{ link }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="elm_footer_links">
+                    <strong class="ui-heading" data-size="sm">Může se hodit</strong>
+                    <ul class="grid gap-4">
+                        {% for link in ['Kontakty', 'Časté dotazy', 'O nás', 'Blog'] %}
+                            <li>
+                                <a class="ui-link" href="#">{{ link }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col gap-12 d:ml-auto">
+                <div class="elm_footer_contact">
+                    <a href="mailto:info@gw-int.net" class="ui-heading" data-size="lg">info@gw-int.net</a>
+                    <div class="ui-title font-normal">jakékoliv dotazy 24/7</div>
+                </div>
+                <div class="elm_footer_contact">
+                    <a href="tel:+420572540068" class="ui-heading" data-size="lg">+420 572 540 068</a>
+                    <div class="ui-title font-normal">po-pá 8:00-17:00</div>
+                </div>
+                <div class="elm_footer_social t:mt-4">
+                    <a class="ui-icon" href="https://www.facebook.com" target="_blank" rel="nofollow">
+                        <svg><use href="#icon-social-facebook"></use></svg>
+                    </a>
+                    <a class="ui-icon" href="https://www.twitter.com" target="_blank" rel="nofollow">
+                        <svg><use href="#icon-social-twitter"></use></svg>
+                    </a>
+                    <a class="ui-icon" href="https://www.instagram.com" target="_blank" rel="nofollow">
+                        <svg><use href="#icon-social-instagram"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,13 @@
+<div class="s-tv">
+    <div class="container grid gap-10 t:gap-16 d:gap-20">
+        <div class="wrp_s_head grid gap-14">
+            {% include '@src/templates/Components/Breadcrumb.twig' %}
+            <h1 class="ui-heading text-center" data-size="xl">GWTV</h1>
+        </div>
+        <div class="wrp_s_body grid t:grid-cols-2 gap-x-10 gap-y-14 t:gap-y-20">
+            {% for item in 1..4 %}
+                {% include '@src/templates/Components/Tv/Item.twig' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

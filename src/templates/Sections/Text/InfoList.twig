@@ -1,0 +1,37 @@
+<div class="s-text-info-list">
+    <div class="container">
+        <div class="wrp_s_head">
+            <h3 class="ui-heading" data-size="md">
+                Nam ornare pulvinar ipsum, vitae porta lorem vestibulum sed. Fusce scelerisque augue eu odio blandit luctus.
+            </h3>
+            <div class="ui-image bg-transparent aspect-square w-[7.5rem] h-[7.5rem] ml-auto m:hidden">
+                <img class="is-circle" src="{{ '/src/assets/circle-gw.png'|asset }}" loading="lazy" alt="">
+            </div>
+        </div>
+        <div class="wrp_s_body">
+            <div class="col col-left">
+                <div class="elm_s_text">
+                    <div class="ui-text">Máte-li chuť a odvahu, pojďte do toho s námi!</div>
+                </div>
+            </div>
+            <div class="col col-right">
+                <div class="elm_s_table">
+                    {% for item in ['Prodejce', 'Síťový manažer', 'Franšízant ve zcela nové zemi'] %}
+                        <div class="elm_item">
+                            <h4 class="ui-heading">{{ item }}</h4>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="elm_s_button pt-9">
+                    <a class="ui-btn-text" href="#">
+                        <span>Začít spolupracovat</span>
+                            <span class="ui-btn-circle">
+                            <svg><use href="#icon-mask"></use></svg>
+                            <svg><use href="#icon-arrow-right"></use></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

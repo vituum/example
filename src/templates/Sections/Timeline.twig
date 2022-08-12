@@ -1,0 +1,19 @@
+<div class="s-timeline">
+    <div class="wrp_s_body container">
+        {% for card in 1..8 %}
+        <div class="elm_s_item">
+            <svg class="elm_item_circle"><use href="#circle-dot"></use></svg>
+            <div class="elm_item_image d:col-6">
+                <div class="ui-image rounded aspect-[46/34]">
+                    <img src="{{ placeholder(460,340) }}" load="lazy" alt="">
+                </div>
+            </div>
+            <div class="elm_item_text d:col-6">
+                <h4 class="ui-heading text-primary mb-2.5" >2001 - červen</h4>
+                <h3 class="ui-heading mb-6" data-size="md">Založení společnosti v ČR</h3>
+                <div class="ui-text">Integer vel pulvinar elit, finibus egestas dolor. Nulla facilisi. Integer at egestas nisl. Integer pulvinar elementum blandit. Nulla commodo diam vel nibh tincidunt dictum in nec neque.</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

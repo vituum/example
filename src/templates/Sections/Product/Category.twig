@@ -1,0 +1,44 @@
+<div class="s-product-category is-s-padding" data-controller="s-product-category">
+    <div class="wrp_s_body container">
+        <div class="col col-left">
+            <h1 class="ui-heading" data-size="lg">Kategorie produktů</h1>
+            <div class="ui-text">
+                <p>Evo dalla qualità eccelsa e dal sapore inconfondibile, ognuno con le proprie caratteristiche organolettiche.</p>
+            </div>
+            <a href="#" class="ui-btn-text">
+                <span>Chci nakupovat</span>
+                <span class="ui-btn-circle">
+                    <svg><use href="#icon-mask"></use></svg>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </span>
+            </a>
+        </div>
+        <div class="col col-right">
+            <div class="elm_s_categories">
+                {% for item in ['Zelené potraviny', 'Doplňkové produkty', 'Knihy a publikace'] %}
+                    <a href="/products" class="c-product-category-item" data-title="{{ item }}" {% if loop.first %}data-state="active"{% endif %} data-action="mouseenter->s-product-category#toggleClass">
+                        <div class="wrp_item_image">
+                            <picture class="ui-image rounded aspect-[39/46]">
+                                <img src="{{ placeholder(390, 460) }}" loading="lazy" alt="">
+                            </picture>
+                        </div>
+                        <div class="wrp_item_body flex justify-center items-end">
+                            <div class="col col-left gap-4">
+                                <h2 class="ui-heading leading-10" data-size="md">{{ item }}</h2>
+                                <div class="ui-text uppercase">
+                                    138 produktů
+                                </div>
+                            </div>
+                            <div class="col col-right">
+                                <div class="ui-btn-circle">
+                                    <svg><use href="#icon-mask"></use></svg>
+                                    <svg><use href="#icon-arrow-right"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

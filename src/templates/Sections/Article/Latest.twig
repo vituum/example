@@ -1,0 +1,44 @@
+<section class="s-article-latest" data-controller="s-article-latest">
+    <div class="container grid">
+        <div class="wrp_s_image" data-s-article-latest-target="image">
+            <picture class="ui-image rounded aspect-[46/58]">
+                <img src="{{ placeholder(460, 580) }}" loading="lazy" alt="">
+            </picture>
+        </div>
+        <div class="wrp_s_head flex justify-between d:pr-8">
+            <h2 class="ui-heading" data-size="lg">Aktuality ze světa zdraví a životního stylu</h2>
+            <div class="ui-image bg-transparent aspect-square w-[7.5rem] h-[7.5rem] m:hidden">
+                <img class="is-circle" src="{{ '/src/assets/circle-gw.png'|asset }}" loading="lazy" alt="">
+            </div>
+        </div>
+        <div class="wrp_s_body" data-action="mouseleave->s-article-latest#hideImage">
+            {% for item in 1..3 %}
+                <a class="elm_item flex gap-4 t:gap-16 d:gap-24 m:flex-wrap" href="#" data-action="mouseenter->s-article-latest#showImage" data-s-article-latest-image-param="{{ placeholder(460, 580) }}">
+                    <div class="col">
+                        <div class="ui-title uppercase text-default whitespace-nowrap" data-size="sm">
+                            <div>Středa 14.</div>
+                            <div>Dubna 2021</div>
+                        </div>
+                    </div>
+                    <div class="col m:order-2">
+                        <h3 class="ui-heading font-normal">Příjemnější těhotenství, více energie a důležité živiny aneb Jak zelené potraviny pomáhají maminkám</h3>
+                    </div>
+                    <div class="col ml-auto d:pr-16 justify-center">
+                        <svg class="ui-icon" data-size="lg">
+                            <use href="#icon-arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="wrp_s_foot">
+            <a class="ui-btn-text" href="#">
+                <div>Další zajímavosti</div>
+                <div class="ui-btn-circle">
+                    <svg><use href="#icon-mask"></use></svg>
+                    <svg><use href="#icon-arrow-right"></use></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>

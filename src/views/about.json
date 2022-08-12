@@ -1,0 +1,34 @@
+{
+  "page": {
+    "title": "Kdo je Green Ways",
+    "body": [
+      {
+        "src": "Sections/Hero/Small.twig",
+        "image": true,
+        "text": true
+      },
+      {
+        "src": "Sections/Text/ImageColumns.twig"
+      },
+      {
+        "src": "Sections/More/Boxes.twig"
+      },
+      {
+        "src": "Sections/Form/Partnership.twig"
+      },
+      {
+        "src": "Sections/Timeline.twig"
+      },
+      {
+        "src": "Sections/Certificates/Slider.twig",
+        "background": true
+      },
+      {
+        "src": "Sections/Partnership.twig"
+      },
+      {
+        "src": "Sections/More/Pages.twig"
+      }
+    ]
+  }
+}

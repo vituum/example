@@ -1,0 +1,17 @@
+<div class="s-downloads">
+    <div class="container">
+        <div class="wrp_s_head">
+            <h3 class="ui-heading" data-size="md">
+                Soubory ke stažení
+            </h3>
+        </div>
+        <div class="wrp_s_body">
+            {% for item in 1..3 %}
+                <a href="#" class="elm_s_item" download="lorem-ipsum.pdf" data-no-swup>
+                    <svg class="ui-image aspect-[5/5]"><use href="#icon-download"></use></svg>
+                    <h4 class="ui-heading">Lorem Ipsum.pdf</h4>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
