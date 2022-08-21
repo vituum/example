@@ -9,7 +9,6 @@
     "vituum": "^0.0.20",
     "@vituum/tailwind": "^0.1.1",
     "@vituum/latte": "^0.1.0",
-    "@vituum/twig": "^0.1.0",
     "@vituum/juice": "^0.1.3",
     "@vituum/posthtml": "^0.1.0"
   }
